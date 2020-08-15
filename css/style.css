@@ -2,3 +2,90 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    background-image: url("../images/kh1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden
+{
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header {
+   /* background-color: orange; */
+
+}
+
+.header a {
+    color: rgb(219, 207, 207);
+}
+
+.header .main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.header .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-basis: 800px;
+}
+
+
+
+
+
+.main {
+    max-width: 1160px;
+    margin: 0 auto;
+}
