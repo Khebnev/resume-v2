@@ -83,9 +83,81 @@ input[type="radio"].visually-hidden
 
 
 
-
-
-.main {
+.container {
     max-width: 1160px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bg {
+    background-image: url("../images/background.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+
+.main .home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 665px;
+}
+
+.home .home__name {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.home .home__position {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.about .about__title {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+.about p {
+    text-align: justify;
+}
+
+
+.skills .skills__title {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.portfolio {
+    background-image: none;
+}
+
+.contacts {
+    background-image: url("../images/bg-city.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+.footer {
+    background-image: url("../images/bg-footer.jpg");
 }
