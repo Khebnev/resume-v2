@@ -97,6 +97,7 @@ input[type="radio"].visually-hidden
 }
 
 
+
 .main .home {
     display: flex;
     flex-direction: column;
@@ -502,16 +503,26 @@ input[type="radio"].visually-hidden
     position: relative;
 }
 
-
-.portfolio ::after {
+.bg-city {
+    position: relative;
+}
+/*
+.bg-city::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 475px;
 
     width: 100%;
-    height: 1px;
-    background-color: rgb(51, 51, 51);
-}
+    height: 20px;
+    background: rgba(56,56,58,1);
+    background: -moz-linear-gradient(top, rgba(56,56,58,1) 0%, rgba(45,43,46,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(56,56,58,1)), color-stop(100%, rgba(45,43,46,1)));
+    background: -webkit-linear-gradient(top, rgba(56,56,58,1) 0%, rgba(45,43,46,1) 100%);
+    background: -o-linear-gradient(top, rgba(56,56,58,1) 0%, rgba(45,43,46,1) 100%);
+    background: -ms-linear-gradient(top, rgba(56,56,58,1) 0%, rgba(45,43,46,1) 100%);
+    background: linear-gradient(to bottom, rgba(56,56,58,1) 0%, rgba(45,43,46,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38383a', endColorstr='#2d2b2e', GradientType=0 );
+}*/
 
 .portfolio h2 {
     flex-basis: 100%;
@@ -554,16 +565,107 @@ input[type="radio"].visually-hidden
     height: 200px;
 }
 
+.bg-city {
+    background-image: url("../images/city.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
 
-
-
+    min-height: 1100px;
+}
 
 .contacts {
-    background-image: url("../images/bg-city.jpg");
-    background-size: 100% auto;
-    background-repeat: repeat-y;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.contacts::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+    background-color: rgb(51, 51, 51);
+}
+
+
+.contacts h2 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contacts .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__wrapper .second-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second-menu a {
+    color: rgb(219, 207, 207);
+}
+
+.second-menu .second-menu__item {
+    margin: 10px 0;
+}
+
+.contacts__wrapper .contacts__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contacts__list a {
+    color: rgb(219, 207, 207);
+}
+
+.contacts__list .contacts__item {
+    margin: 10px 0;
+}
+
+.contacts__wrapper .contacts__social-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
+
+.contacts__social-list .social-list__item {
+    opacity: 0.3;
+}
+.contacts__social-list .social-list__item:hover {
+    opacity: 1;
 }
 
 .footer {
     background-image: url("../images/bg-footer.jpg");
+
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+}
+
+.footer .footer__copyright {
+    font-size: 36px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 25px 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(219, 207, 207);
 }
