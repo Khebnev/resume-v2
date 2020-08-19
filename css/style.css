@@ -727,7 +727,27 @@ input[type="radio"].visually-hidden
 /*laptop*/
 
 @media (max-width: 992px) {
-
+    .skills .skills--wrapper {
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .skills .professional-skills {
+        flex-basis: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .skills .skills__cms {
+        flex-basis: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .skills .languages {
+        text-align: center;
+        flex-basis: 300px;
+        margin: 0 auto;
+    }
 }
 /*tablet*/
 
