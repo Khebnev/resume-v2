@@ -676,11 +676,11 @@ input[type="radio"].visually-hidden
     color: rgb(219, 207, 207);
 }
 
-@media (max-width: 1111px) {
+@media (max-width: 1200px) {
     body {
     
         background-image: url("../images/kh1.jpg");
-        background-size: 1111px auto;
+        background-size: 1200px auto;
         background-position: top center;
         background-repeat: no-repeat;
     }
@@ -703,7 +703,7 @@ input[type="radio"].visually-hidden
 
     
     .main .home {
-        margin-bottom: 290px;
+        margin-bottom: 335px;
     }
 
     .home .avatar-img {
@@ -724,6 +724,12 @@ input[type="radio"].visually-hidden
     
 }
 
+/*laptop*/
+
+@media (max-width: 992px) {
+
+}
+/*tablet*/
 
 @media (max-width: 767px) {
     body {
@@ -761,5 +767,11 @@ input[type="radio"].visually-hidden
     .about p {
         text-align: justify;
         font-size: 15px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 540px) {
+    .main .home {
+        margin-bottom: 190px;
     }
 }
