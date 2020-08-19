@@ -144,6 +144,7 @@ input[type="radio"].visually-hidden
 }
 .about p {
     text-align: justify;
+    font-size: 20px;
 }
 
 .skills {
@@ -676,6 +677,13 @@ input[type="radio"].visually-hidden
 }
 
 @media (max-width: 1111px) {
+    body {
+    
+        background-image: url("../images/kh1.jpg");
+        background-size: 1111px auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
 
     .header .logo {
         width: 80px;
@@ -692,6 +700,12 @@ input[type="radio"].visually-hidden
         
         font-size: 16px;
     }
+
+    
+    .main .home {
+        margin-bottom: 290px;
+    }
+
     .home .avatar-img {
         width: 150px;
         height: auto;
@@ -702,10 +716,24 @@ input[type="radio"].visually-hidden
     .home .home__position {
         font-size: 22px;
     }
+
+    .about p {
+        text-align: justify;
+        font-size: 17px;
+    }
+    
 }
 
 
 @media (max-width: 767px) {
+    body {
+    
+        background-image: url("../images/kh1.jpg");
+        background-size: 767px auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
     .header .logo {
         width: 60px;
     }
@@ -714,15 +742,24 @@ input[type="radio"].visually-hidden
         flex-basis: 400px;
         font-size: 12px;
     }
+        
+    .main .home {
+        margin-bottom: 208px;
+    }
 
     .home .avatar-img {
-        width: 100px;
+        width: 80px;
         height: auto;
     }
     .home .home__name {
-        font-size: 23px;
+        font-size: 18px;
     }
     .home .home__position {
-        font-size: 18px;
+        font-size: 15px;
+    }
+    
+    .about p {
+        text-align: justify;
+        font-size: 15px;
     }
 }
