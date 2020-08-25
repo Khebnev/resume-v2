@@ -84,7 +84,9 @@ input[type="radio"].visually-hidden
 
 
 .container {
-
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .bg {
@@ -745,6 +747,17 @@ input[type="radio"].visually-hidden
         flex-basis: 300px;
         margin: 0 auto;
     }
+    .portfolio .portfolio__list {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .portfolio__list img {
+        width: 270px;
+        height: 170px;
+    }
+    
 }
 /*tablet*/
 
@@ -784,6 +797,13 @@ input[type="radio"].visually-hidden
     .about p {
         text-align: justify;
         font-size: 15px;
+    }
+
+    .portfolio .portfolio__list{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
