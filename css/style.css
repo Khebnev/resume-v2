@@ -6,9 +6,9 @@ html, body {
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 
-    background-image: url("../images/kh1.jpg");
+/*    background-image: url("../images/kh1.jpg");
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 a {
@@ -677,13 +677,36 @@ input[type="radio"].visually-hidden
     color: rgb(219, 207, 207);
 }
 
-@media (max-width: 1200px) {
-    body {
-    
+@media (min-width: 1200px) {
+    .header {
         background-image: url("../images/kh1.jpg");
-        background-size: 1200px auto;
+        background-size: 100% 100%;
         background-position: top center;
         background-repeat: no-repeat;
+        min-height: 996px;
+    }
+    .home {
+        margin-top: 100px;
+        margin-bottom: 575px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1199px) {
+   /* body {
+    
+        background-image: url("../images/kh1.jpg");
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }*/
+    .header {
+        background-image: url("../images/kh1.jpg");
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        min-height: 796px;
     }
 
     .header .logo {
@@ -703,8 +726,9 @@ input[type="radio"].visually-hidden
     }
 
     
-    .main .home {
+    .home {
         margin-bottom: 335px;
+        text-align: center;
     }
 
     .home .avatar-img {
@@ -727,7 +751,23 @@ input[type="radio"].visually-hidden
 
 /*laptop*/
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+     .header {
+        background-image: url("../images/kh1.jpg");
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        min-height: 596px;
+    }
+    .home .avatar-img {
+        width: 100px;
+    }
+    .home .home__name {
+        font-size: 22px;
+    }
+    .home .home__position {
+        font-size: 18px;
+    }
     .skills .skills--wrapper {
         flex-wrap: wrap;
         width: 90%;
