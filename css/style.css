@@ -791,7 +791,7 @@ input[type="radio"].visually-hidden
     }
     .portfolio .portfolio__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 90%;
         margin: 0 auto;
     }
@@ -804,14 +804,29 @@ input[type="radio"].visually-hidden
 /*tablet*/
 
 @media (max-width: 767px) {
-    body {
+   /* body {
     
         background-image: url("../images/kh1.jpg");
         background-size: 767px auto;
         background-position: top center;
         background-repeat: no-repeat;
+    }*/
+    .header {
+        background-image: url("../images/kh1.jpg");
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        min-height: 596px;
     }
-
+    .home .avatar-img {
+        width: 100px;
+    }
+    .home .home__name {
+        font-size: 22px;
+    }
+    .home .home__position {
+        font-size: 18px;
+    }
     .header .logo {
         width: 60px;
     }
@@ -849,11 +864,11 @@ input[type="radio"].visually-hidden
     }
 }
 
-@media (min-width: 480px) and (max-width: 540px) {
+/*@media (min-width: 480px) and (max-width: 540px) {
     .main .home {
         margin-bottom: 190px;
     }
-}
+}*/
 
 
 /* Кнопка вверх*/
