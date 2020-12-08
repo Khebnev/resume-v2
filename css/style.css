@@ -862,6 +862,20 @@ input[type="radio"].visually-hidden
         width: 80%;
         margin: 0 auto;
     }
+    .contacts .contacts__wrapper {
+       flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contacts__wrapper .second-menu {
+        text-align: center;
+    }
+    .contacts__wrapper .contacts__list {
+        text-align: center;
+    }
+    .contacts__wrapper .contacts__social-list {
+        flex-basis: 100%;
+        justify-content: space-around;
+    }
 }
 
 /*@media (min-width: 480px) and (max-width: 540px) {
