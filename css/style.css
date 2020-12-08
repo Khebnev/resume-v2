@@ -653,6 +653,8 @@ input[type="radio"].visually-hidden
 
 .contacts__social-list .social-list__item {
     opacity: 0.3;
+    width: 40px;
+    height: 40px;
 }
 .contacts__social-list .social-list__item:hover {
     opacity: 1;
