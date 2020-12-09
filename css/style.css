@@ -881,11 +881,18 @@ input[type="radio"].visually-hidden
     }
 }
 
-/*@media (min-width: 480px) and (max-width: 540px) {
-    .main .home {
-        margin-bottom: 190px;
+@media (max-width: 540px) {
+     .header {
+        background-image: url("../images/kh1.jpg");
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        min-height: 240px;
     }
-}*/
+    /*.main .home {
+        margin-bottom: 190px;
+    }*/
+}
 
 
 /* Кнопка вверх*/
