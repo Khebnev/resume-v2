@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         jQuery( document ).ready(function() {
             jQuery('#scrollup img').mouseover( function(){
@@ -35,20 +36,23 @@
         <nav class="main-navigation">
             <a class="main-logo"><img class="logo" src="images/logo.png" alt="logo" ></a>
             <ul class="site-navigation">
-                <a><li class="site-navigation__item">Главная</li></a>
-                <a href="#about"><li class="site-navigation__item">Обо мне</li></a>
-                <a href="#skills"><li class="site-navigation__item">Навыки</li></a>
-                <a href="#portfolio"><li class="site-navigation__item">Портфолио</li></a>
-                <a href="#contacts"><li class="site-navigation__item">Контакты</li></a>
+                <li class="site-navigation__item"><a>Home</a></li>
+               <li class="site-navigation__item"> <a href="#about">About</a></li>
+                <li class="site-navigation__item"><a href="#skills">Skills</a></li>
+                <li class="site-navigation__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="site-navigation__item"><a href="#contacts">Contacts</a></li>
             </ul>
+            <div class="burger--wrapper noActive">
+                <div class="burger"></div>
+            </div>
         </nav>
         <section class="home">
             <div class="container">
-                <h1 class="visually-hidden">Резюме Хебнева Антона</h1>
+                <h1 class="visually-hidden">Resume Khebnev A</h1>
                 <p class="home-avatar"><img class="avatar-img" src="images/avatar.svg" alt="avatar" width="200" height="200"></p>
-                <p class="home__name">Антон Хебнев</p>
+                <p class="home__name">Anton Khebnev</p>
                 <!-- <p class="home__birthday">10.04.1996</p> -->
-                <p class="home__position">Верстальщик</p> 
+                <!-- <p class="home__position">Верстальщик</p>  -->
             </div>
         </section>
     </header>
@@ -56,16 +60,16 @@
         
         <div class="bg">
             <section class="about container">
-                <h2 class="about__title"><a name="about">Обо мне</a></h2>
-                <p class="about__description">Меня зовут Антон, мне 24 года. Живу в городе Харьков.</p>
-                <p class="about__description">В свободное время общаюсь с людьми с разных стран, смотрю фильмы, расширяю кругозор, люблю гулять и ходить в кино.</p>
-                <p class="about__description">Изучаю английский язык, стремлюсь его усовершенствовать, общаясь с носителями. Развиваю навыки владения Photoshop. Прохожу курсы по вёрстке.</p>
+                <h2 class="about__title"><a name="about">About</a></h2>
+                <p class="about__description">My name is Anton. I live in Kharkiv city.</p>
+                <p class="about__description">In my free time I communicate with people from different countries, watch movies, broaden my horizons, I like to walk and go to the cinema.</p>
+                <p class="about__description">I study English and strive to improve it by communicating with native speakers. I develop my skills in Photoshop. I take courses on HTML-coding.</p>
             </section>       
             <section class="skills container">
-                <h2 class="skills__title"><a name="skills">Мои навыки</a></h2>
+                <h2 class="skills__title"><a name="skills">My skills</a></h2>
                 <div class="skills--wrapper">
                     <div class="professional-skills">
-                        <h3>Профессиональные навыки</h3>
+                        <h3>Professional skills</h3>
                         <ul class="professional-skills__list">
                             <li class="professional-skills__item">
                                 <p class="professional-skills__title">HTML &#38; CSS</p>
@@ -112,75 +116,36 @@
 
                             </li>
                             <li class="professional-skills__item">
-                                <p class="professional-skills__title">Остальное</p>
-                                <p class="professional-skills__percent">Скоро</p>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills__cms">
-                        <h3>CMS</h3>
-                        <ul class="cms__list">
-                            <li class="cms__item">
-                                <p class="cms__title">Joomla</p>
-                                <p class="cms__percent">12%</p>
+                                <p class="professional-skills__title">Joomla</p>
+                                <p class="professional-skills__percent">12%</p>
                                 
                             </li>
-                            <li class="cms__item">
-                                <p class="cms__title">Wordpress</p>
-                                <p class="cms__percent">3%</p>
-                                
-                            </li>
-                            <li class="cms__item">
-                                <p class="cms__title">ModX</p>
-                                <p class="cms__percent">10%</p>
-                                
-                            </li>
-                            <li class="cms__item">
-                                <p class="cms__title">Megagroup</p>
-                                <p class="cms__percent">3%</p>
-                                
-                            </li>
-                            <li class="cms__item">
-                                <p class="cms__title">Bitrix</p>
-                                <p class="cms__percent">3%</p>
-                                
-                            </li>
-                            <li class="cms__item">
-                                <p class="cms__title">Drupal</p>
-                                <p class="cms__percent">Скоро</p>
-                                
-                            </li>
-                            <li class="cms__item">
-                                <p class="cms__title">Opencart</p>
-                                <p class="cms__percent">Скоро</p>
+                            <li class="professional-skills__item">
+                                <p class="professional-skills__title">Wordpress</p>
+                                <p class="professional-skills__percent">3%</p>
                                 
                             </li>
                         </ul>
                     </div>
                     <div class="languages">
-                        <h3>Языки</h3>
+                        <h3>Languages</h3>
                         <ul class="languages__list">
                             <li class="languages__item">
-                                <p class="languages__title">Русский</p>
-                                <p class="languages__percent">Свободно</p>
+                                <p class="languages__title">Russian</p>
+                                <p class="languages__percent">Fluent</p>
                                 
                             </li>
                             <li class="languages__item">
-                                <p class="languages__title">Украинский</p>
-                                <p class="languages__percent">Продвинутый</p>
+                                <p class="languages__title">Ukrainian</p>
+                                <p class="languages__percent">Advanced</p>
                             </li>
                             <li class="languages__item">
-                                <p class="languages__title">Английский</p>
-                                <p class="languages__percent">Ниже среднего</p>
+                                <p class="languages__title">English</p>
+                                <p class="languages__percent">Intermediate</p>
                             </li>
                             <li class="languages__item">
-                                <p class="languages__title">Испанский</p>
-                                <p class="languages__percent">Начальный</p>
-                            </li>
-                            <li class="languages__item">
-                                <p class="languages__title">Другие</p>
-                                <p class="languages__percent">Скоро</p>
+                                <p class="languages__title">Spanish</p>
+                                <p class="languages__percent">Less than survive</p>
                             </li>
                         </ul>
                     </div>
@@ -189,62 +154,63 @@
             
             <div class="bg-city">
                 <section class="portfolio container">
-                    <h2><a name="portfolio">Портфолио</a></h2>
+                    <h2><a name="portfolio">Portfolio</a></h2>
                     <ul class="portfolio__list">
                         <li class="portfolio__item">
                             <a class="project" href="https://khebnev.github.io/WelcomeOnMyCompany/">
                                 <img src="images/welcome_on_mycompany.png" alt="Welcome On MyCompany" width="300" height="200">
                                 <p class="project__name">Welcome On MyCompany</p>
-                                <p class="project__description">Видеоурок с Youtube</p>
-                            </a>
-                        </li>
-                        <li class="portfolio__item">
-                            <a class="project" href="https://khebnev.github.io/Barbershop/">
-                                <img src="images/barbershop.png" alt="Barbershop" width="300" height="200">
-                                <p class="project__name">Barbershop</p>
-                                <p class="project__description">Учебный проект</p>
-                            </a>
-                        </li>
-                        <li class="portfolio__item">
-                            <a class="project" href="https://khebnev.github.io/Nerds/">
-                                <img src="images/nerds.png" alt="Nerds" width="300" height="200">
-                                <p class="project__name">Nerds</p>
-                                <p class="project__description">Тренировочный макет</p>
-                            </a>
-                        </li>
-                        <li class="portfolio__item">
-                            <a class="project" href="https://khebnev.github.io/Sedona/">
-                                <img src="images/sedona.png" alt="Sedona" width="300" height="200">
-                                <p class="project__name">Sedona</p>
-                                <p class="project__description">Тренровочный макет</p>
-                            </a>
-                        </li>
-                        <li class="portfolio__item">
-                            <a class="project" href="https://khebnev.github.io/Exploore/">
-                                <img src="images/exploore.png" alt="Exploore" width="300" height="200">
-                                <p class="project__name">Exploore</p>
-                                <p class="project__description">Тренировочный макет</p>
-                            </a>
-                        </li>
-                        <li class="portfolio__item">
-                            <a class="project" href="https://khebnev.github.io/service_page/">
-                                <img src="images/service.png" alt="The Best Services" width="300" height="200">
-                                <p class="project__name">The Best Services</p>
-                                <p class="project__description">Тренировочный макет</p>
-                            </a>
-                        </li>
-                        <li class="portfolio__item">
-                            <a class="project" href="https://khebnev.github.io/news_agency/">
-                                <img src="images/news-agency.png" alt="Новостное агенство" width="300" height="200">
-                                <p class="project__name">Новостное агенство</p>
-                                <p class="project__description">Тренировочный макет</p>
+                                <p class="project__description">Training project</p>
                             </a>
                         </li>
                         <li class="portfolio__item">
                             <a class="project" href="https://okna-stolica.ru/">
                                 <img src="images/okna-stolica.ru.png" alt="" width="300" height="200">
                                 <p class="project__name">Окна Schuco (шуко)</p>
-                                <p class="project__description">Рабочий проект</p>
+                                <p class="project__description">Working project</p>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a class="project" href="https://khebnev.github.io/Nerds/">
+                                <img src="images/nerds.png" alt="Nerds" width="300" height="200">
+                                <p class="project__name">Nerds</p>
+                                <p class="project__description">Training project</p>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a class="project" href="https://khebnev.github.io/Sedona/">
+                                <img src="images/sedona.png" alt="Sedona" width="300" height="200">
+                                <p class="project__name">Sedona</p>
+                                <p class="project__description">Training project</p>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a class="project" href="https://khebnev.github.io/Barbershop/">
+                                <img src="images/barbershop.png" alt="Barbershop" width="300" height="200">
+                                <p class="project__name">Barbershop</p>
+                                <p class="project__description">Training project</p>
+                            </a>
+                        </li>
+                       
+                        <li class="portfolio__item">
+                            <a class="project" href="https://khebnev.github.io/Exploore/">
+                                <img src="images/exploore.png" alt="Exploore" width="300" height="200">
+                                <p class="project__name">Exploore</p>
+                                <p class="project__description">Training project</p>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a class="project" href="https://khebnev.github.io/service_page/">
+                                <img src="images/service.png" alt="The Best Services" width="300" height="200">
+                                <p class="project__name">The Best Services</p>
+                                <p class="project__description">Training project</p>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a class="project" href="https://khebnev.github.io/news_agency/">
+                                <img src="images/news-agency.png" alt="Новостное агенство" width="300" height="200">
+                                <p class="project__name">Новостное агенство</p>
+                                <p class="project__description">Training project</p>
                             </a>
                         </li>
                         <li class="portfolio__item">

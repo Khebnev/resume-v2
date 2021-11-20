@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden
 }
 
 .bg {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/bg-v3.jpg");
     background-size: 100% auto;
     background-repeat: repeat-y;
 }
@@ -187,7 +187,7 @@ input[type="radio"].visually-hidden
 
 .skills .skills--wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 
 }
@@ -549,7 +549,7 @@ input[type="radio"].visually-hidden
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     flex-basis: 300px;
 
@@ -571,7 +571,7 @@ input[type="radio"].visually-hidden
 }
 
 .bg-city {
-    background-image: url("../images/city.jpg");
+    background-image: url("../images/onlycity.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -759,6 +759,51 @@ input[type="radio"].visually-hidden
         background-repeat: no-repeat;
         min-height: 596px;
     }
+
+    .header .site-navigation {
+        display: none;
+        position: relative;
+    }
+
+    .header .site-navigation.active {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+/*    height: 100%;*/
+    top: 10px;
+    justify-content: space-around;
+
+    }
+    .site-navigation.active .site-navigation__item {
+        text-align: right;
+    }
+    .burger--wrapper {
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        position: relative;
+    } 
+
+    .burger.active::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: orange;
+        transform: rotate(45deg);
+        top: 10px;
+    }
+    .burger.active::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: blue;
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+
     .home .avatar-img {
         width: 100px;
     }
