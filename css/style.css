@@ -650,7 +650,7 @@ input[type="radio"].visually-hidden
     opacity: 1;
 }
 .contacts__social-list  .telegram__icon img {
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 .footer {
