@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 45%;
     height: 10px;
 
@@ -237,8 +237,8 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
-    width: 15%;
+
+    width: 20%;
     height: 10px;
 
     background-color: lightslategray;
@@ -247,7 +247,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 20%;
     height: 10px;
 
@@ -257,7 +257,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 20%;
     height: 10px;
 
@@ -267,7 +267,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 3%;
     height: 10px;
 
@@ -277,7 +277,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 3%;
     height: 10px;
 
@@ -287,8 +287,8 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
-    width: 1%;
+
+    width: 15%;
     height: 10px;
 
     background-color: lightslategray;
@@ -297,8 +297,8 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
-    width: 1%;
+
+    width: 10%;
     height: 10px;
 
     background-color: lightslategray;
@@ -307,18 +307,8 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
-    width: 15%;
-    height: 10px;
 
-    background-color: lightslategray;
-}
-.skills .professional-skills__item:nth-child(10)::after {
-    content: "";
-    position: absolute;
-    bottom: 10px;
-    
-    width: 1%;
+    width: 12%;
     height: 10px;
 
     background-color: lightslategray;
@@ -360,7 +350,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 12%;
     height: 10px;
 
@@ -370,7 +360,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 3%;
     height: 10px;
 
@@ -380,7 +370,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 3%;
     height: 10px;
 
@@ -390,7 +380,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 3%;
     height: 10px;
 
@@ -400,7 +390,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 1%;
     height: 10px;
 
@@ -410,7 +400,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 1%;
     height: 10px;
 
@@ -452,7 +442,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 90%;
     height: 10px;
 
@@ -463,7 +453,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 80%;
     height: 10px;
 
@@ -474,7 +464,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 45%;
     height: 10px;
 
@@ -485,7 +475,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 5%;
     height: 10px;
 
@@ -496,7 +486,7 @@ input[type="radio"].visually-hidden
     content: "";
     position: absolute;
     bottom: 10px;
-    
+
     width: 1%;
     height: 10px;
 
@@ -659,6 +649,9 @@ input[type="radio"].visually-hidden
 .contacts__social-list .social-list__item:hover {
     opacity: 1;
 }
+.contacts__social-list  .telegram__icon img {
+    border-radius: 50%;
+}
 
 .footer {
     background-image: url("../images/bg-footer.jpg");
@@ -695,7 +688,7 @@ input[type="radio"].visually-hidden
 
 @media (max-width: 1199px) {
    /* body {
-    
+
         background-image: url("../images/kh1.jpg");
         background-size: 100% 100%;
         background-position: top center;
@@ -721,11 +714,11 @@ input[type="radio"].visually-hidden
         padding: 0;
         margin: 0;
         flex-basis: 600px;
-        
+
         font-size: 16px;
     }
 
-    
+
     .home {
         /*margin-bottom: 335px;*/
         text-align: center;
@@ -746,7 +739,7 @@ input[type="radio"].visually-hidden
         text-align: justify;
         font-size: 17px;
     }
-    
+
 }
 
 /*laptop*/
@@ -783,7 +776,7 @@ input[type="radio"].visually-hidden
         height: 20px;
         background-color: green;
         position: relative;
-    } 
+    }
 
     .burger.active::before {
         content: "";
@@ -844,13 +837,13 @@ input[type="radio"].visually-hidden
         width: 270px;
         height: 170px;
     }
-    
+
 }
 /*tablet*/
 
 @media (max-width: 767px) {
    /* body {
-    
+
         background-image: url("../images/kh1.jpg");
         background-size: 767px auto;
         background-position: top center;
@@ -880,7 +873,7 @@ input[type="radio"].visually-hidden
         flex-basis: 400px;
         font-size: 12px;
     }
-        
+
     .main .home {
         margin-bottom: 208px;
     }
@@ -895,7 +888,7 @@ input[type="radio"].visually-hidden
     .home .home__position {
         font-size: 15px;
     }
-    
+
     .about p {
         text-align: justify;
         font-size: 15px;
